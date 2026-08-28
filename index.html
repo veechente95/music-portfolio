@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Music portfolio — demos, projects, and production work." />
+  <title>Vicente Ceja — Music Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="nav">
+    <a href="#" class="logo">Vicente Ceja</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#tools">Tools</a>
+      <a href="#demos">Demos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <p class="hero-label">Music Portfolio</p>
+      <h1>Vicente Ceja</h1>
+      <p class="tagline">Musician · Composer · Producer</p>
+      <a href="#demos" class="btn">Listen to demos</a>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About</h2>
+        <div class="about-grid">
+          <div class="about-image">
+            <img src="images/profile.jpg" alt="Vicente Ceja" onerror="this.parentElement.classList.add('placeholder')" />
+          </div>
+          <div class="about-text">
+            <p>
+              I’m a Los Angeles-based music writer and creative with a background in technology, storytelling, 
+              and a deep love for discovering new sounds. I’m drawn to music that feels cinematic, 
+              emotionally honest, and immersive, from alternative and indie to hip-hop, electronic, 
+              and everything in between. My goal is to capture not just what an artist sounds like, 
+              but the energy, emotion, and experience that make their music worth remembering.
+
+            </p>
+            <p>
+              I’m interested in both what music sounds like and how it feels.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tools" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Tools & Workflow</h2>
+        <p class="section-subtitle">What I use to create music</p>
+        <div class="tools-grid">
+          <div class="tool-group">
+            <h3>DAW</h3>
+            <ul class="tool-tags">
+              <li>FL Studio</li>
+              <li>Garage Band</li>
+            </ul>
+          </div>
+          <div class="tool-group">
+            <h3>Plugins & Instruments</h3>
+            <ul class="tool-tags">
+              <li>Serum</li>
+              <li>Kontakt</li>
+              <li>BFD Player</li>
+              <li>Spitfire LABS Drums</li>
+              <li>Spitfire Audio Labs</li>
+              <li>Native Instruments Komplete Start</li>
+
+            </ul>
+          </div>
+          <div class="tool-group">
+            <h3>Hardware</h3>
+            <ul class="tool-tags">
+              <li>Fender Stratocaster Guitar</li>
+              <li>Ibanez Talman TMB100 Bass</li>
+              <li>M-Audio MIDI Controller</li>
+              <li>Focusrite Audio Interface</li>
+              <li>M Audio BX5 D2 Studio Monitors</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="demos" class="section">
+      <div class="container">
+        <h2 class="section-title">Demos & Projects</h2>
+        <p class="section-subtitle">Click play to listen</p>
+        <div class="tracks">
+
+          <article class="track-card" data-src="audio/Reflections.mp3">
+            <div class="track-cover">
+              <img src="images/covers/orchestra.jpg" alt="Reflections cover" onerror="this.parentElement.classList.add('placeholder')" />
+            </div>
+            <div class="track-info">
+              <h3>Reflections</h3>
+              <p class="track-meta">Orchestra · 2026</p>
+              <div class="player">
+                <button class="play-btn" aria-label="Play Reflections">
+                  <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                  <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                </button>
+                <div class="player-bar">
+                  <input type="range" class="progress" value="0" min="0" max="100" aria-label="Track progress" />
+                  <span class="time">0:00 / 0:00</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="track-card" data-src="audio/EDM Beat.mp3">
+            <div class="track-cover">
+              <img src="images/covers/agave.jpg" alt="EDM Beat" onerror="this.parentElement.classList.add('placeholder')" />
+            </div>
+            <div class="track-info">
+              <h3>Clave Agave</h3>
+              <p class="track-meta">Electronic · 2026</p>
+              <div class="player">
+                <button class="play-btn" aria-label="Play Urban Pulse">
+                  <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                  <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                </button>
+                <div class="player-bar">
+                  <input type="range" class="progress" value="0" min="0" max="100" aria-label="Track progress" />
+                  <span class="time">0:00 / 0:00</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          
+          <article class="track-card" data-src="audio/Ok Beat.mp3">
+            <div class="track-cover">
+              <img src="images/covers/Ok Beat.jpg" alt="Ok Beat" onerror="this.parentElement.classList.add('placeholder')" />
+            </div>
+            <div class="track-info">
+              <h3>Ok Beat</h3>
+              <p class="track-meta">R&B · 2026</p>
+              <div class="player">
+                <button class="play-btn" aria-label="Play Urban Pulse">
+                  <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                  <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                </button>
+                <div class="player-bar">
+                  <input type="range" class="progress" value="0" min="0" max="100" aria-label="Track progress" />
+                  <span class="time">0:00 / 0:00</span>
+                </div>
+              </div>
+            </div>
+          </article>            
+
+          <article class="track-card" data-src="audio/Romantico.mp3">
+            <div class="track-cover">
+              <img src="images/covers/mariachi.jpg" alt="Romantico" onerror="this.parentElement.classList.add('placeholder')" />
+            </div>
+            <div class="track-info">
+              <h3>El Romantico</h3>
+              <p class="track-meta">Latin · 2026</p>
+              <div class="player">
+                <button class="play-btn" aria-label="Play Urban Pulse">
+                  <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                  <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                </button>
+                <div class="player-bar">
+                  <input type="range" class="progress" value="0" min="0" max="100" aria-label="Track progress" />
+                  <span class="time">0:00 / 0:00</span>
+                </div>
+              </div>
+            </div>
+          </article>  
+
+          <article class="track-card" data-src="audio/Ukulele.mp3">
+            <div class="track-cover">
+              <img src="images/covers/tropical.jpg" alt="Ukulele" onerror="this.parentElement.classList.add('placeholder')" />
+            </div>
+            <div class="track-info">
+              <h3>Root Beer Float By The Beach</h3>
+              <p class="track-meta">Indie · 2021</p>
+              <div class="player">
+                <button class="play-btn" aria-label="Play Urban Pulse">
+                  <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                  <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                </button>
+                <div class="player-bar">
+                  <input type="range" class="progress" value="0" min="0" max="100" aria-label="Track progress" />
+                  <span class="time">0:00 / 0:00</span>
+                </div>
+              </div>
+            </div>
+          </article>   
+          
+          <article class="track-card" data-src="audio/Lofi Beat.mp3">
+            <div class="track-cover">
+              <img src="images/covers/lofi.jpg" alt="Lofi Beat" onerror="this.parentElement.classList.add('placeholder')" />
+            </div>
+            <div class="track-info">
+              <h3>Lee Sample</h3>
+              <p class="track-meta">Lofi · 2020</p>
+              <div class="player">
+                <button class="play-btn" aria-label="Play Urban Pulse">
+                  <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                  <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                </button>
+                <div class="player-bar">
+                  <input type="range" class="progress" value="0" min="0" max="100" aria-label="Track progress" />
+                  <span class="time">0:00 / 0:00</span>
+                </div>
+              </div>
+            </div>
+          </article>          
+
+          <article class="track-card" data-src="audio/Groovy.mp3">
+            <div class="track-cover">
+              <img src="images/covers/cassette.jpg" alt="Groovy" onerror="this.parentElement.classList.add('placeholder')" />
+            </div>
+            <div class="track-info">
+              <h3>Groovy Cassette</h3>
+              <p class="track-meta">Neo Soul · 2019</p>
+              <div class="player">
+                <button class="play-btn" aria-label="Play Urban Pulse">
+                  <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                  <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                </button>
+                <div class="player-bar">
+                  <input type="range" class="progress" value="0" min="0" max="100" aria-label="Track progress" />
+                  <span class="time">0:00 / 0:00</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="track-card" data-src="audio/Bose Commercial.mp3">
+            <div class="track-cover">
+              <img src="images/covers/commercial.jpg" alt="Bose Commercial" onerror="this.parentElement.classList.add('placeholder')" />
+            </div>
+            <div class="track-info">
+              <h3>Soundtrack / Commercial Beat</h3>
+              <p class="track-meta">Electronic · 2015</p>
+              <div class="player">
+                <button class="play-btn" aria-label="Play Urban Pulse">
+                  <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                  <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                </button>
+                <div class="player-bar">
+                  <input type="range" class="progress" value="0" min="0" max="100" aria-label="Track progress" />
+                  <span class="time">0:00 / 0:00</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-subtitle">Let's connect</p>
+        <div class="contact-links">
+          <a href="mailto:you@email.com" class="contact-link">vicenteceja123@gmail.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Your Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/player.js"></script>
+  <script src="js/nav.js"></script>
+</body>
+</html>
